@@ -1,1 +1,1 @@
-<h1>Jenkins Demo Projects</h1>
+<h1>Jenkins Demo Project</h1>
