@@ -2,6 +2,8 @@ version: "3.8"
 
 services:
   jenkins:
+    networks:
+      - jenkins
     container_name: jenkins-latest
     image: jenkins/jenkins:latest
     ports:
@@ -9,3 +11,6 @@ services:
       - "50000:50000"
     volumes:
       - ./jenkins_data:/var/jenkins_home
+
+networks:
+  jenkins:
